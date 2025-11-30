@@ -1,0 +1,32 @@
+{
+  "name": "sex",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "electron-builder": "^23.6.0"
+  },
+  "build": {
+    "appId": "com.fmfau.desktop",
+    "productName": "FMFAU Desktop",
+    "files": [
+      "**/*"
+    ],
+    "directories": {
+      "buildResources": "Assets"
+    },
+    "win": {
+      "icon": "Assets/icon.ico"
+    },
+    "linux": {
+      "icon": "Assets/icon.png"
+    }
+  }
+}
